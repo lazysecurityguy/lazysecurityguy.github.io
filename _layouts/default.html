@@ -1,8 +1,13 @@
-{% include headers.html %}
-<body>
-<div align="center">
-{% include nav.html %}
-{{ page.content }}
-
-</div>
-{% include footer.html %}
+<!doctype html>
+<html>
+  {% include head.html %}
+  <body>
+    <div class="container">
+      {% include header.html %}
+      <div class="content-wrapper">
+        {{ content }}
+      </div>
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

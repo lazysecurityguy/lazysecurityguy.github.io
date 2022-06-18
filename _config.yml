@@ -1,14 +1,20 @@
-url: https://lazysecurityguy.github.io
-title: Security Blog
-subtitle: Lazy Security Blog.
-#theme: jekyll-theme-hacker
-timezone: Europe/Moscow
-#permalink: /blog/:year/:month/:day/:title/
-baseurl: ""
-highlighter: rouge
+# Site Build Settings
+
+# jekyll-paginate configuration
+paginate: 10
+
+# Build settings
 markdown: kramdown
-kramdown:
-  input: GFM
-#paginate: 5
-#paginate_path: "/blog/num/"
-#plugins: "jekyll-paginate"
+highlighter: rouge
+permalink: /:title
+timezone: Europe/Moscow
+plugins: [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
+
+# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
+title: "Lazy Security Blog"
+description: "a minimalist Jekyll theme for running a blog or publication"
+author: "L4zy"
+
+# RSS 2.0 can be used instead of Atom by uncommenting following two lines
+#feed:
+path: rss-feed.xml
