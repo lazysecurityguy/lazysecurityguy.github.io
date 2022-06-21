@@ -1,4 +1,5 @@
 # Site Build Settings
+production_url: https://lazysecurity.xyz
 url: https://lazysecurity.xyz
 # jekyll-paginate configuration
 paginate: 5
